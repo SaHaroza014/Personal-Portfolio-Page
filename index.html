@@ -5,6 +5,22 @@
 *{
   box-sizing: border-box;
 }
+.bg-yellowish{
+  background-color: #9BA2FF;
+  color: white;
+}
+.social-ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.social-ul a {
+  color: white;
+  font-size: 30px;
+  margin: 8px;
+}
 body{
   background-color: #ECE4B7;
   font-family: 'Rubik';
@@ -36,6 +52,15 @@ header * {
   position: relative;
   z-index: 1;
 }
+header h1{
+  font-size: 60px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+header p{
+  font-size: 30px;
+  margin: 0;
+}
 footer{
   background-color: #776871;
   color: white;
@@ -45,12 +70,30 @@ footer{
 footer .fa-heart{
   color: red;
 }
+section{
+  text-align: center;
+  padding: 30px;
+}
+section header{
+  margin-bottom:0;
+}
+section p {
+  margin-top: 0;
+}
+section h2{
+  margin: 0;
+}
 nav{
   background-color: #776871;
   color: white;
   display: flex;
   justify-content: flex-end;
   padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 nav a{
   color: white;
@@ -59,6 +102,10 @@ nav a{
 }
 a:hover{
   color: orange;
+  text-decoration: underline;
+}
+project{
+  max-width: 250px;
 }
     </style>
 <head>
@@ -74,20 +121,25 @@ a:hover{
   </nav>
   
   <header id="about">
-    <h1>Welcome to my Webpage!</h1>
+    <h1>Welcome to my Webpage</h1>
     <p>My name is Sanjin Hadžalić</p>
     <p>and I am beginner in Web Development</p>
   </header>
   
   <section id="projects">
     <h2>Projects</h2>
-    //tu bu išli projekti
+    <div class="project"><img src="#" alt=""><p>Project 1</p>
+    <div class="project"><img src="#" alt=""><p> Project 2</p>
+      <div class="project"><img src="#" alt=""><p></p>
+        <div class="project"><img src="#" alt=""><p></p>
+          <div class="project"><img src="#" alt=""><p></p>
+            <div class="project"><img src="#" alt=""><p></p>
   </section>
   
-  <section id="social">
-    <h2>Social</h2>
-    <p>You can find me on...</p>
-    <ul>
+  <section id="social" class="bg-yellowish">
+    <h2>Social Media</h2>
+    <p>You can find me on</p>
+    <ul class="social-ul">
       <li><a href="https://github.com/SaHaroza014" target="_blank"><i class="fab fa-github"></i></a></li>
       <li><a href="https://www.linkedin.com/in/sanjin-had%C5%BEali%C4%87-1584231a5/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
       <li><a href="https://www.facebook.com/sanjin.hadzalic.14" target="_blank"><i class="fab fa-facebook"></i></a></li>
@@ -95,5 +147,3 @@ a:hover{
   </section>
   
   <footer>Made with <i class="fas fa-heart"></i> by Sanjin Hadžalić</footer>
-
-</html>
