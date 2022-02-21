@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #ECE4B7;
+  font-family: 'Rubik';
+  margin:0;
+}
+header{
+  background-image: url("https://images.unsplash.com/photo-1513863640767-1605e79998a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80");
+  background-size: cover;
+  background-position:center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+header::after{
+  content:'';
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8; 
+} 
+header * {
+  position: relative;
+  z-index: 1;
+}
+footer{
+  background-color: #776871;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+footer .fa-heart{
+  color: red;
+}
+nav{
+  background-color: #776871;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+nav a{
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+a:hover{
+  color: orange;
+}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Webpage</title>
+</head>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#social">Social</a>
+  </nav>
+  
+  <header id="about">
+    <h1>Welcome to my Webpage!</h1>
+    <p>My name is Sanjin Hadžalić</p>
+    <p>and I am beginner in Web Development</p>
+  </header>
+  
+  <section id="projects">
+    <h2>Projects</h2>
+    //tu bu išli projekti
+  </section>
+  
+  <section id="social">
+    <h2>Social</h2>
+    <p>You can find me on...</p>
+    <ul>
+      <li><a href="https://github.com/SaHaroza014" target="_blank"><i class="fab fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/sanjin-had%C5%BEali%C4%87-1584231a5/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="https://www.facebook.com/sanjin.hadzalic.14" target="_blank"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="https://www.researchgate.net/profile/Sanjin-Hadzalic-2" target="_blank"><i class="fab fa-researchgate"></i></a></li>
+  </section>
+  
+  <footer>Made with <i class="fas fa-heart"></i> by Sanjin Hadžalić</footer>
+
+</html>
