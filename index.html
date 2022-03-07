@@ -1,149 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
-*{
-  box-sizing: border-box;
-}
-.bg-yellowish{
-  background-color: #9BA2FF;
-  color: white;
-}
-.social-ul{
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-.social-ul a {
-  color: white;
-  font-size: 30px;
-  margin: 8px;
-}
-body{
-  background-color: #ECE4B7;
-  font-family: 'Rubik';
-  margin:0;
-}
-header{
-  background-image: url("https://images.unsplash.com/photo-1513863640767-1605e79998a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80");
-  background-size: cover;
-  background-position:center;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100vh;
-  position: relative;
-}
-header::after{
-  content:'';
-  background-color: #000;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.8; 
-} 
-header * {
-  position: relative;
-  z-index: 1;
-}
-header h1{
-  font-size: 60px;
-  margin-bottom: 10px;
-  margin-top: 0;
-}
-header p{
-  font-size: 30px;
-  margin: 0;
-}
-footer{
-  background-color: #776871;
-  color: white;
-  padding: 10px;
-  text-align: center;
-}
-footer .fa-heart{
-  color: red;
-}
-section{
-  text-align: center;
-  padding: 30px;
-}
-section header{
-  margin-bottom:0;
-}
-section p {
-  margin-top: 0;
-}
-section h2{
-  margin: 0;
-}
-nav{
-  background-color: #776871;
-  color: white;
-  display: flex;
-  justify-content: flex-end;
-  padding: 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-}
-nav a{
-  color: white;
-  margin-left: 15px;
-  text-decoration: none;
-}
-a:hover{
-  color: orange;
-  text-decoration: underline;
-}
-project{
-  max-width: 250px;
-}
-    </style>
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Webpage</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/earth.png">
 </head>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#social">Social</a>
-  </nav>
-  
-  <header id="about">
-    <h1>Welcome to my Webpage</h1>
-    <p>My name is Sanjin Hadžalić</p>
-    <p>and I am beginner in Web Development</p>
-  </header>
-  
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project"><img src="#" alt=""><p>Project 1</p>
-    <div class="project"><img src="#" alt=""><p> Project 2</p>
-      <div class="project"><img src="#" alt=""><p></p>
-        <div class="project"><img src="#" alt=""><p></p>
-          <div class="project"><img src="#" alt=""><p></p>
-            <div class="project"><img src="#" alt=""><p></p>
-  </section>
-  
-  <section id="social" class="bg-yellowish">
-    <h2>Social Media</h2>
-    <p>You can find me on</p>
-    <ul class="social-ul">
-      <li><a href="https://github.com/SaHaroza014" target="_blank"><i class="fab fa-github"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/sanjin-had%C5%BEali%C4%87-1584231a5/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-      <li><a href="https://www.facebook.com/sanjin.hadzalic.14" target="_blank"><i class="fab fa-facebook"></i></a></li>
-      <li><a href="https://www.researchgate.net/profile/Sanjin-Hadzalic-2" target="_blank"><i class="fab fa-researchgate"></i></a></li>
-  </section>
-  
-  <footer>Made with <i class="fas fa-heart"></i> by Sanjin Hadžalić</footer>
+<body>
+    <div class="navBarWrapper">
+        <div class="TopBar">
+            <ul class="left">
+                <li class="titleLeft">Sanjin Hadžalić</li>
+            </ul>
+            <ul class="right">
+                <li class="buttons">
+                    <nav>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#social">Social</a>
+                    </nav>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <header>
+        <h1>Welcome</h1>
+    </header>
+    <div id="content">
+        <div id="about">
+            <h2>About</h2>
+            <img class="profile_picture" src="images\profile_picture.png" alt="profile_picture">
+            <p class="about-p">Hello! My name is Sanjin Hadžalić.</p>
+            <p class="about-p">I'm a beginner in Web Development and I've made this Website to practice my skills.</p>
+            <p class="about-p">Hope you enjoy your stay on my website :-)</p>
+        </div>
+
+        <div class="inner">
+            <div id="skills">
+                <h2 class="skills-h2">Skills</h2>
+            </div>
+            <div class="container">
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="image">
+                            <img src="images/Skills/c.png" alt="C" class="skill-icon">
+                        </div>
+                        <h2>C</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="image">
+                            <img src="images/Skills/c++.png" alt="c++" class="skill-icon">
+                        </div>
+                        <h2>C++</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="image">
+                            <img src="images/Skills/css.png" alt="css" class="skill-icon">
+                        </div>
+                        <h2>CSS</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="image">
+                            <img src="images/Skills/html.png" alt="html" class="skill-icon">
+                        </div>
+                        <h2>HTML</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="image">
+                            <img src="images/Skills/letter-r.png" alt="R" class="skill-icon">
+                        </div>
+                        <h2>R</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="image">
+                            <img src="images/Skills/python.png" alt="Python" class="skill-icon">
+                        </div>
+                        <h2>Python</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects">
+            <h2>Projects</h2>
+        </div>
+
+        <div id="social">
+            <h2>Social Media</h2>
+            <p>You can find me on</p>
+            <ul class="social-ul">
+                <li><a href="https://github.com/SaHaroza014" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/sanjin-had%C5%BEali%C4%87-1584231a5/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/sanjin.hadzalic.14" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                </li>
+                <li><a href="https://www.researchgate.net/profile/Sanjin-Hadzalic-2" target="_blank"><i
+                            class="fab fa-researchgate"></i></a></li>
+        </div>
+    </div>
+
+
+    <footer>Made with <i class="fas fa-heart"></i> by Sanjin Hadžalić</footer>
+</body>
