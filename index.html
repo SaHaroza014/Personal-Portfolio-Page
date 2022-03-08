@@ -8,11 +8,12 @@
     <title>Personal Portfolio Webpage</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="image/x-icon" href="/images/earth.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <!-- https://stackoverflow.com/questions/27484858/css-change-color-on-scroll-cut-text-overflow-z-index -->
-    <div class="navBarWrapper">
+     <div class="navBarWrapper">
         <div class="TopBar">
             <ul class="left">
                 <li class="titleLeft">Sanjin Hadžalić</li>
@@ -23,7 +24,7 @@
                         <a href="#about">About</a>
                         <a href="#skills">Skills</a>
                         <a href="#projects">Projects</a>
-                        <a href="#social">Social</a>
+                        <a href="#contact">Social</a>
                     </nav>
                 </li>
             </ul>
@@ -41,6 +42,11 @@
             <p class="about-p">Hello! My name is Sanjin Hadžalić.</p>
             <p class="about-p">I'm a beginner in Web Development and I've made this Website to practice my skills.</p>
             <p class="about-p">Hope you enjoy your stay on my website :-)</p>
+            <div style="font-size: xx-large;" class="social-buttons">
+              <a  href="https://github.com/SaHaroza014" class="fa fa-github"></a>
+              <a href="https://www.facebook.com/sanjin.hadzalic.14/" class="fa fa-facebook"></a>
+              <a href="https://www.linkedin.com/in/sanjin-had%C5%BEali%C4%87-1584231a5/" class="fa fa-linkedin"></a>
+            </div>
         </div>
 
         <div class="inner">
@@ -206,22 +212,30 @@
               </div>
             </div>
           </section>
-
-        <div id="social">
-            <h2>Social Media</h2>
-            <p>You can find me on</p>
-            <ul class="social-ul">
-                <li><a href="https://github.com/SaHaroza014" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/sanjin-had%C5%BEali%C4%87-1584231a5/" target="_blank"><i
-                            class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://www.facebook.com/sanjin.hadzalic.14" target="_blank"><i
-                            class="fab fa-facebook"></i></a>
-                </li>
-                <li><a href="https://www.researchgate.net/profile/Sanjin-Hadzalic-2" target="_blank"><i
-                            class="fab fa-researchgate"></i></a></li>
-        </div>
+          <!-- Contact -->
+          <section class="contact" id="contact">
+            <h2 class="contact-title">Contact me</h2>
+            <div class="contact-form-container">
+              <div class="contact-form">
+                <form action="mailto:sh14.sanjin@yahoo.com" method="POST">
+                  <div class="form-control">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="sender-name" placeholder="Enter Your Name"
+                      class="input-field" required/>
+                  </div>
+                  <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field" required/>
+                  </div>
+                  <div class="form-control">
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
+                  </div>
+                  <input type="submit" value="Submit" id="submit-btn" class="submit-btn"/>
+                </form>
+              </div>
+            </div>
+          </section>
     </div>
-
-
-    <footer>Made with <i class="fas fa-heart"></i> by Sanjin Hadžalić</footer>
+    <footer>Made with <img src="images\heart.png" class="heart-icon"></i> by Sanjin Hadžalić</footer>
 </body>
